@@ -8,7 +8,7 @@ export default function LoginForm({ onLogin }) {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const res = await axios.post(`${apiUrl}/login`, {
+    const res = await axios.post('/api/login', {
       email,
       password,
     });

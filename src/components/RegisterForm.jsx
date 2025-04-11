@@ -8,7 +8,7 @@ export default function RegisterForm() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    await axios.post(`${apiUrl}/register`, { email, password });
+    await axios.post('/api/register', { email, password });
     alert("Usuario registrado");
     setEmail("");
     setPassword("");

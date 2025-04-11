@@ -7,7 +7,7 @@ export default function UserList() {
 
   const fetchUsers = async () => {
     const token = localStorage.getItem("token");
-    const res = await axios.get(`${apiUrl}/users`, {
+    const res = await axios.get('/api/users', {
       headers: { Authorization: `Bearer ${token}` },
     });
     setUsers(res.data);
